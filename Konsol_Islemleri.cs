@@ -5,12 +5,12 @@ namespace Algoritma
     {
        public void GirdiMesajı()
        {
-           Console.Write("Lütfen aralarında boşluk olacak şekilde bir kelime ve sayı giriniz.");
+           Console.Write("Lütfen aralarında boşluk olacak şekilde önce bir kelime ve sonra sayı giriniz:");
        }
-       public string[] CumleAlma()
+       public string[] GirdiyiDiziyeAtma() //Metot ismi CumleAlma'dan GirdiyiDiziyeAtma'ya dönüştürüldü.
        {
            string st = Console.ReadLine();
-           return st.Split(",");
+           return st.Split(","); //Kelime ve sayıların arasında "," olacağı için , ile ayırıp oluşan diziyi döndürdüm.
        } 
     }
 }
